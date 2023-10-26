@@ -2,7 +2,7 @@ package ejercicio2;
 
 import conexion.ConexionSQL;
 
-public class empleados {
+public class Empleados {
 
 		public static void main(String[] args) {
 			ConexionSQL.mySQLConnection("root", "primero", "");
