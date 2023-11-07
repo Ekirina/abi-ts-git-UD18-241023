@@ -27,7 +27,7 @@ public class ConexionSQL {
 	public static void mySQLConnection(String usuario, String contrasenya, String bbdd) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conexion = DriverManager.getConnection("jdbc:mysql://localhost:32768/", "root", "primero");
+			conexion = DriverManager.getConnection("jdbc:mysql://localhost:32768/"+bbdd, "root", "primero");
 			System.out.println("Server Connected");
 		} catch (SQLException | ClassNotFoundException ex) {
 			System.out.println("No se ha podido conectar con la bbdd");
